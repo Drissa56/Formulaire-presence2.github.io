@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de Présence</title>
+    <style>
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-size: 1.1em;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>CONFIRMEZ VOTRE PRÉSENCE POUR LA PARTIE (ENTRE AMIS !)</h1>
+    <form action="https://votre-serveur-ou-service-de-recevoir-les-données.com" method="POST">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="contact">Contact :</label><br>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <label for="ville">Ville :</label><br>
+        <input type="text" id="ville" name="ville" required><br><br>
+
+        <label for="quartier">Quartier :</label><br>
+        <input type="text" id="quartier" name="quartier" required><br><br>
+
+        <button type="submit">Soumettre</button>
+    </form>
+</body>
+</html>
